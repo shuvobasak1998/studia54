@@ -1,0 +1,599 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Sedgwick+Ave+Display&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Poppins&family=Sedgwick+Ave+Display&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Montserrat:wght@200&family=Poppins&family=Sedgwick+Ave+Display&display=swap');
+/* font family
+font-family: 'Dancing Script', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Sedgwick Ave Display', cursive;
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* phone manu style start here  */
+.menu-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, .35);
+    padding: 10px;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+.menu-container:hover {
+    background-color: rgba(0, 0, 0, .35);
+}
+
+.menu-container:hover .phonemenu a,
+.menu-container:hover .lang-menu a {
+    color: #cba37c;
+}
+
+
+.phonemenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phonemenu a {
+    display: block;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 700;
+}
+
+.phonemenu a:hover i,
+.phonemenu .telephone:hover,
+.lang-menu a:hover {
+    color: white !important;
+}
+
+.lang-menu {
+    font-weight: 700;
+}
+
+.lang-menu a {
+    text-decoration: none;
+    color: #000000;
+    margin-left: 10px;
+}
+
+.lang-menu a:hover {
+    color: white;
+}
+
+/* phone manu style start here  */
+
+
+
+/* hero section code start here  */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    animation: zoomInAnimation 15s infinite;
+}
+
+.hero img:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.hero img:nth-child(2) {
+    animation-delay: 5s;
+}
+
+.hero img:nth-child(3) {
+    animation-delay: 10s;
+}
+
+@keyframes zoomInAnimation {
+
+    0%,
+    10% {
+        opacity: 0;
+        transform: scale(1);
+    }
+
+    15%,
+    30% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+
+    45%,
+    60% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+
+    75%,
+    90% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1);
+    }
+}
+
+.hero-container {
+    position: relative;
+    /* Add any necessary styling for the container */
+}
+
+.hero-text {
+    position: absolute;
+    bottom: 40%;
+    left: 30%;
+    text-align: center;
+    font-size: 100px;
+    color: white;
+    padding: 10px 20px;
+    font-family: 'Sedgwick Ave Display', cursive;
+    animation: fadeInUp 3s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* hero section code end here */
+
+
+
+/* nav button code  */
+.navbar {
+    margin: 0;
+    padding: 0;
+}
+
+.fixed-button-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.button-with-logo {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-text {
+    margin-right: 5px;
+}
+
+.logo {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.offcanvas.offcanvas-end {
+    top: 0;
+    right: 0;
+    width: 100%;
+    background: black;
+}
+
+.offcanvas-header .btn-close {
+    background: aqua;
+}
+
+/* nav button code  ends here  */
+
+
+/*main content code */
+.main_content_section {
+    background-color: #171717;
+    max-width: 1350px;
+    padding-left: 35px;
+    padding-right: 35px;
+
+}
+
+.left_main_content h4 {
+    font-family: 'Dancing Script', cursive;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.left_main_content {
+    padding-top: 100px;
+}
+
+.right_main_content {
+    padding-top: 148px;
+}
+
+.left_main_content h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #cba37c;
+    font-size: 35px;
+    text-align: justify;
+}
+
+.left_main_content p {
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 200;
+    text-align: justify;
+}
+
+/* right content */
+.right_main_content .img-wrapper {
+    width: 100%;
+    position: relative;
+    background-color: #171717;
+}
+
+.right_main_content .img-wrapper img {
+    position: relative;
+    width: 95%;
+    height: auto;
+    z-index: 2;
+    /* Higher z-index for image to be on top of the border */
+    top: -3rem;
+    left: 3rem;
+}
+
+.img-wrapper .img-overlay {
+    position: absolute;
+    width: 95%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    /* Lower z-index for overlay to be behind the image */
+    border: 2rem solid #c9c9c90f;
+    opacity: 1;
+    /* You can add background-color here to fill the overlay */
+}
+
+/*main content end code */
+
+
+/* services section */
+#service-section {
+    background-color: #171717;
+}
+
+.service_section_div {
+    padding-top: 5rem;
+    /* background-color: #171717; */
+    max-width: 1350px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.service_section_div .heading h4 {
+    font-family: 'Dancing Script', cursive;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.service_section_div .heading h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #cba37c;
+    font-size: 35px;
+    text-align: justify;
+    margin-bottom: 3rem;
+}
+
+.service-card {
+    height: 100%;
+
+}
+
+.card-image-div {
+    width: 100%;
+    height: 20rem;
+}
+
+.card-image-div img {
+    width: 100%;
+    height: 100%;
+}
+
+.card-bottomtext {
+    background: #000000;
+    height: 38%;
+}
+
+.card-div .card-bottomtext p {
+    /* background: #000000; */
+    color: #ffffff;
+    padding: 2rem 1.5rem;
+    font-size: 1rem;
+    height: 100%;
+}
+
+/* This class is the container for the card and overlay */
+.card-div {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+
+}
+
+/* This class represents the overlay */
+.card-lay {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 50%;
+    
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    opacity: 1;
+ 
+    border: 1px solid #cba37c;
+    z-index: 2;
+    transition: opacity 0.3s;
+
+}
+
+.card-lay-text {
+    position: absolute;
+    z-index: 3;
+    top: 20%;
+  
+    left: 50%;
+   
+    transform: translate(-50%, -50%);
+
+    opacity: 1;
+    color: white;
+    width: 100%;
+    background: black;
+}
+
+.card-lay-text h2 {
+    margin-left: 5%;
+    font-family: 'Dancing Script', cursive;
+}
+
+
+
+.service-card {
+
+    position: relative;
+}
+
+
+.service-card:hover .card-lay {
+    border: 1px solid white;
+}
+
+.service-card:hover .card-lay-text h2 {
+    color: #cba37c;
+    text-align: center;
+    font-size: 25px;
+    transition: 1s;
+
+}
+
+.service-card:hover .card-lay {
+    height: 95%;
+    top: 50%;
+    transition: 1s;
+}
+
+
+
+
+.portfolio-section .heading h4 {
+    font-family: 'Dancing Script', cursive;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.portfolio-section .heading h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #cba37c;
+    font-size: 35px;
+    text-align: justify;
+    margin-bottom: 3rem;
+}
+
+.portfolio-section {
+    padding-top: 5rem;
+    /* background-color: #171717; */
+    max-width: 1350px;
+    padding-left: 35px;
+    padding-right: 35px;
+
+}
+
+#portfolio {
+    background-color: #171717;
+}
+
+.portfolio-picture-div {
+    position: relative;
+    width: 100%;
+}
+
+.portfolio-picture-div img {
+    width: 100%;
+}
+.portfolio-picture-div:after {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    right: 20px;
+    bottom: 0;
+    opacity: .9;
+    border: 1px solid #fff;
+    border-width: 1px 1px 0;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+.portfolio-item-info {
+    padding: 25px 50px 0;
+    transition: transform 1s ease-out;
+    position: relative;
+    bottom: 0;
+}
+.portfolio-item-info:before {
+    left: 20px;
+}
+.portfolio-item-info:before, .portfolio-item-info:after {
+    content: '';
+    position: absolute;
+    height: 50px;
+    width: 0.5px;
+    background-color: #fff;
+    opacity: .9;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    top: -10px;
+}
+.portfolio-item-title span:before  {
+    content: '';
+    position: absolute;
+    top: 15px;
+    height: 1px;
+    width: 650px;
+    background-color: #fff;
+    opacity: .9;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+.portfolio-item-title span:before {
+    left: 100%;
+    margin-left: -123px;
+}
+ .portfolio-item-title span:after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    height: 1px;
+    width: 650px;
+    background-color: #fff;
+    opacity: .9;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+.portfolio-item-title span:after {
+    right: 100%;
+    margin-right: -23px;
+}
+.portfolio-item-title {
+    position: relative;
+    overflow: hidden;
+    font-size: 20px;
+    margin-left: -30px;
+    margin-right: -30px;
+    padding: 0 30px;
+    color: white;
+}
+.portfolio-item-params {
+    color: #fff;
+    margin-top: 10px;
+    font-size: 15px;
+}
+.portfolio-item-info:after {
+    right: 20px;
+}
+.portfolio-item:hover .portfolio-item-info {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+}
+
+.portfolio-item:hover .portfolio-item-title span:before,
+.portfolio-item:hover .portfolio-item-title span:after,
+.portfolio-item:hover .portfolio-item-info:after,
+.portfolio-item:hover .portfolio-item-info span,
+.portfolio-item:hover .portfolio-item-info::before{
+    background-color: #cba37c;
+}
+.portfolio-item:hover .portfolio-picture-div{
+    color: #cba37c;
+    height: 65%;
+    transition: 2s;
+}
+
+
+.portfolio-item:hover .portfolio-item-title span{
+    color: black;
+    font-weight: 600;
+    font-size: 24.5px;
+    padding: 2px;
+    font-family: 'Dancing Script', cursive;
+
+}
+.portfolio-item:hover .portfolio-item-params {
+    color: white;
+    font-weight: 600;
+    font-size: 24.5px;
+    padding: 2px;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: -1rem;
+}
+.portfolio-item:hover .portfolio-picture-div:after {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    right: 20px;
+    bottom: 0;
+    opacity: .9;
+    border: 1px solid #cba37c;
+    border-width: 1px 1px 0;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    height: 90%;
+}
+.portfolio-item:hover .portfolio-item-info{
+    background-color: #cba47c98;
+}
+
+
